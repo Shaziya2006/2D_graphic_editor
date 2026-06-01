@@ -1,0 +1,22 @@
+# Makefile for 2D Graphics Editor
+CC      = gcc
+CFLAGS  = -Wall -Wextra -pedantic -std=c99
+TARGET  = graphics_editor
+SRCS    = main.c canvas.c draw.c objects.c menu.c
+OBJS    = $(SRCS:.c=.o)
+ 
+.PHONY: all clean run
+ 
+all: $(TARGET)
+ 
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $^
+ 
+%.o: %.c graphics.h
+	$(CC) $(CFLAGS) -c -o $@ $<
+ 
+run: all
+	./$(TARGET)
+ 
+clean:
+	rm -f $(OBJS) $(TARGET)

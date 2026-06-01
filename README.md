@@ -13,6 +13,15 @@ A menu-driven 2D Graphics Editor implemented in C using a 2D character array as 
 - Delete Objects
 - Modify Objects
 - Display Canvas
+## Project Structure
+
+graphics.h  - Common declarations
+canvas.c    - Canvas management
+draw.c      - Drawing algorithms
+objects.c   - Object management
+menu.c      - Menu system
+main.c      - Program entry point
+Makefile    - Build automation
 
 ## Technologies Used
 
