@@ -13,6 +13,7 @@ A menu-driven 2D Graphics Editor implemented in C using a 2D character array as 
 - Delete Objects
 - Modify Objects
 - Display Canvas
+
 ## Project Structure
 
 graphics.h  - Common declarations
