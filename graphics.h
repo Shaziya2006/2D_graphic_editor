@@ -1,3 +1,0 @@
-// structs
-// constants
-// function declarations
