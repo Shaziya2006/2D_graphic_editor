@@ -1,0 +1,71 @@
+Design and implement a menu-driven 2D Graphics Editor in C using a 2D character array as the drawing canvas. The canvas should initially be filled with the character _ (underscore), and graphical objects should be drawn using the character * (asterisk).
+
+Write functions to draw a circle, rectangle, line, and triangle.
+You should be able to      add objects to the picture,      delete objects from the picture, and       modify objects in the picture.
+Use a 2d array of characters to store the picture.
+Write a function to display the picture.
+
+Optimized tool selection
+
+Read [](file:///c%3A/Users/shazi/OneDrive/2D_graphic_editor/main.c)
+
+Implementing the full menu-driven editor now, including object storage, drawing routines, and display logic.
+
+Replacing 6 lines with 437 lines in [](file:///c%3A/Users/shazi/OneDrive/2D_graphic_editor/main.c)
+
+Reading the exact file content before updating.
+
+Read [](file:///c%3A/Users/shazi/OneDrive/2D_graphic_editor/main.c)
+
+Replacing 6 lines with 437 lines in [](file:///c%3A/Users/shazi/OneDrive/2D_graphic_editor/main.c)
+
+Replacing 5 lines with 437 lines in [](file:///c%3A/Users/shazi/OneDrive/2D_graphic_editor/main.c)
+
+
+```
+
+```
+Compiling the updated editor to verify the implementation.
+
+Ran terminal command: gcc main.c -o graphics_editor.exe
+
+Checked terminal output
+
+## ✅ Implemented
+
+main.c now contains a complete menu-driven 2D graphics editor with:
+
+- 2D canvas stored in a `char[ROWS][COLS]`
+- initial fill character `_`
+- drawing objects using `*`
+- functions for:
+  - `drawRectangle`
+  - `drawCircle`
+  - `drawLine`
+  - `drawTriangle`
+- object management:
+  - add
+  - delete
+  - modify
+  - list
+- display function for the picture
+
+## 🔧 Notes
+
+- Canvas size is `20 x 40`
+- Objects are stored in an array of structs
+- The editor redraws the canvas after changes
+- Compiled successfully to graphics_editor.exe in the workspace folder
+
+If you want, I can also add save/load support or change the canvas dimensions interactively.
+
+Made changes.
+
+Would you like me to enhance the graphics editor with **ncurses** for:
+
+1. **Better menu system** – formatted boxes, colors, and navigation
+2. **Improved canvas display** – cleaner rendering with borders and labels
+3. **Interactive controls** – potentially mouse support and better keyboard navigation
+
+This would make the editor more polished and user-friendly.
+
